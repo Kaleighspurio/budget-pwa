@@ -10,7 +10,7 @@ const FILES_TO_CACHE = [
   ];
   
   // the name of the cache we are going to use for storing our static assets
-  const CACHE_NAME = "static-cache-v1";
+  const CACHE_NAME = "static-cache-v2";
   // the name of the cache we are going to use for storing responses to API requests
   const DATA_CACHE_NAME = "data-cache-v1";
   
