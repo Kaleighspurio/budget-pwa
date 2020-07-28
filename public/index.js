@@ -152,9 +152,10 @@ document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
 
-
+// credit for this goes to the miniproject from week 17...
 let db;
 // create a new db request for a "budget" database.
+// name of the database is budget, version is 1
 const request = indexedDB.open("budget", 1);
 
 request.onupgradeneeded = function(event) {
@@ -172,6 +173,7 @@ request.onsuccess = function(event) {
   }
 };
 
+// If there is an error
 request.onerror = function(event) {
   console.log("Woops! " + event.target.errorCode);
 };
